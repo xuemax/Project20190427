@@ -28,43 +28,44 @@
     }
 
     .span {
+      /*字體大小*/
       font-size: 150%;
-      margin: 0px 2% 0px 0px;
+      margin: 0px 2% 100px 0px;
     }
 
-
-    .menuitem {
-      padding: 8px;
-      margin-top: 7px;
-      border-bottom: 1px solid #f1f1f1;
-    }
-
-    .main {
+    .left {
+      /*靠右*/
       float: left;
+      /*底色*/
       background-color: rgb(253, 245, 252);
+      /*寬*/
       width: 69%;
+      /*高*/
       height: 720px;
+      /*內距 上*/
       padding: 20px;
-      overflow: hidden;
     }
 
     .right {
+      /*靠右*/
+      float: right;
       border: 2px;
+      /*底色*/
       background-color: rgb(233, 71, 206);
+      /*外距 上右 下左*/
       margin: 0px 0px 10px 0px;
       width: 30%;
       height: 720px;
-      float: right;
     }
-
-    .divh1 {
+    /*div 置中*/
+    .divCenter {
       text-align: center;
     }
-
+    /*字體*/
     .font-type {
       font-family: serif;
     }
-
+    /*底*/
     .footer {
       clear: both;
       background-color: #FFD4D4;
@@ -73,16 +74,27 @@
       line-height: 80px;
     }
 
+    /*按鈕*/
     .btn {
+      /*底色 顏色*/
       background-color: rgb(0, 0, 0);
+      /*字體 顏色*/
       color: white;
+      /*內區 上右*/
       padding: 10px 50px;
+      /*弧角*/
       border-radius: 10px;
     }
 
+    /*輸入框*/
     .text {
-      width: 20%;
-      height: 30px;
+      width: 15%;
+      /*內區 加高*/
+      padding: 7px;
+      /*拿掉限制height*/
+      -webkit-appearance: none;
+      /*弧角*/
+      border-radius: 10px;
     }
   </style>
 </head>
@@ -99,9 +111,9 @@
     </span>
   </div>
 
-  <div class="main">
-    <div class="divh1">
-      <h2>Article heading</h2>
+  <div class="left">
+    <div class="divCenter">
+      <h1>Article heading</h1>
     </div>
     <div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris.
@@ -109,7 +121,7 @@
         eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.
       </p>
 
-      <h3>Subsection</h3>
+      <h2>Subsection</h2>
 
       <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing
         elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
@@ -117,7 +129,7 @@
       <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt
         feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
 
-      <h3>Another subsection</h3>
+      <h2>Another subsection</h2>
 
       <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis
         parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis
@@ -130,7 +142,7 @@
   </div>
 
   <div class="right">
-    <div class="divh1">
+    <div class="divCenter">
       <h1>Header</h1>
     </div>
     <ul>
